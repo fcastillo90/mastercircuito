@@ -16,27 +16,23 @@
 		
 	?>
 	
-	<body <?php body_class( $awesome_classes ); ?>>
+	<body style="overflow-x:hidden;" <?php body_class( $awesome_classes ); ?>>
 		
 		<div class="">
 		
-			<div class="row">
-				
-				<div class="col-xs-12">
-					
-					<nav class="navbar navbar-default">
-					  <div class="container-fluid">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">2
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					      <a class="navbar-brand" href="#"><img src="<?php echo get_bloginfo('template_directory');?>/img/Logo-Master-Circuitos2.png"></a>
-					    </div>
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="#"><img src="<?php echo get_bloginfo('template_directory');?>/img/Logo-Master-Circuitos2.png" id="imgnavbar"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<?php 
 								wp_nav_menu(array(
 									'theme_location' => 'primary',
@@ -45,9 +41,11 @@
 									)
 								);
 							?>
-						</div>
-					  </div><!-- /.container-fluid -->
-					</nav>
-				
-				</div>				
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>				
 			</div>
+            <br><br><br><br>
