@@ -66,3 +66,29 @@ function awesome_widget_setup() {
 	
 }
 add_action('widgets_init','awesome_widget_setup');
+
+function my_custom_sliders_posttype(){
+   $args = array(
+   'labels'=> array( 'name'=>'sliders',
+       'singular_name'=> 'slider',
+       'menu_name'=>'sliders',
+       'name_admin_bar'=> 'sliders',
+       'all_items' =>'View all sliders',
+       'add_new'=> 'Add New sliders' ),
+   'description' =>"This post type is for sliders",
+   'public' => true,
+   'exclude_from_search'=>false,
+   'publicly_queryable'=> true,
+   'show_ui' => true,
+   'show_in_menu'=> true,
+   'show_in_admin_bar'=> true,
+   'menu_position'=>6,
+   'capability_type'=> 'page',
+   'supports'=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt',
+    ),
+   'query_var'=>true,
+  );
+  register_post_type( "sliders", $args );
+ }
+ add_action("init","my_custom_sliders_posttype");
+/******./slider in dashboard***********/
