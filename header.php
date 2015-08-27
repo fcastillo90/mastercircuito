@@ -18,7 +18,7 @@
 	
 	<body <?php body_class( $awesome_classes ); ?>>
 		
-		<div class="container">
+		<div class="">
 		
 			<div class="row">
 				
@@ -27,14 +27,14 @@
 					<nav class="navbar navbar-default">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">
+					    <div class="navbar-header">2
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					        <span class="sr-only">Toggle navigation</span>
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a class="navbar-brand" href="#">Awesome Theme</a>
+					      <a class="navbar-brand" href="#"><img src="<?php echo get_bloginfo('template_directory');?>/img/Logo-Master-Circuitos2.png"></a>
 					    </div>
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<?php 
@@ -49,12 +49,5 @@
 					  </div><!-- /.container-fluid -->
 					</nav>
 				
-				</div>
-				
-				<div class="search-form-container">
-					<?php get_search_form(); ?>
-				</div>
-				
+				</div>				
 			</div>
-			
-			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
