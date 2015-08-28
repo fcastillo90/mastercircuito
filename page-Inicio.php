@@ -6,24 +6,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <!-- 
-    <div class="item active">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slide1.jpg" alt="...">
-      <div class="caro-caps">
-  <h2>BOND / EXIT CLEAN SPECIALISTS</h2>
-        <p>Moving Out? We can save you time and moneyby providing you
-with bond cleaning, carpet cleaning and pest control
-services at a discounted price</p>
-  <div class="lnk-btn more-btn"><a href="#">More Details</a></div>
-      </div>
-    </div>
-    -->
-   
-   
-   
+  </ol>   
 <div class="carousel-inner">
                <?php
  $class_active="active";
@@ -39,10 +22,7 @@ if( $my_query->have_posts() ) {
   while ($my_query->have_posts()) : $my_query->the_post(); ?>
              
                 <div class="item <?php echo $class_active ;?>">
-                 <?php the_post_thumbnail('full'); ?>
-
-                  <h2> <?php the_title(); ?> </h2>
-                  <p> <?php the_content();?> </p>           
+					<?php the_content();?>          
                   </div>
                    <?php
 

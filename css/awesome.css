@@ -89,6 +89,8 @@ h6 {
 .lead {
     font-size: 14px;
     font-weight: 400;
+	
+	text-align:justify;
 }
 
 
@@ -235,7 +237,7 @@ h6 {
 }
 
 .banner {
-  background-image: url(../imagenes/banner.jpg);
+  background-image: url(../img/banner.jpg);
   background-repeat: repeat-x;
   background-position:center center;
   background-size: cover;
@@ -290,22 +292,24 @@ h6 {
 	position:relative;
 }
 #footer {
+	position:relative;
+	font-size: 0.9em;
+    padding: 25px 0px;
+	height:100px;
 	width:100%;
-	position:absolute;
-	bottom:0;
-	left:0;
+	bottom:0px;
+	background-color:#111;
 }
 
-#footer ul li { 
+footer ul li { 
 	display: inline; 
 	padding-right:20px;
 	}
 	
 footer { 
-	font-size: 0.9em;
-    padding: 20px 0;
-    background-color: #111;
-	height:10%;
+	background-color:#111;
+	bottom:0px;
+	padding-right:20px;
 }
 
 p.copyright {
@@ -347,6 +351,15 @@ text-shadow: none;
 .navbar-default {
     background-color: rgba(225,225,225,1);
     border-color: rgba(225,225,225,1);
+}
+.barradenav a:focus,
+.barradenav li:hover > a,
+.barradenav .current-menu-item > a,
+.barradenav .current-menu-ancestor > a,
+.barradenav .current_page_item > a,
+.barradenav .current_page_ancestor > a {
+  background-color: #003278;
+  color: #fff;
 }
 
 .gmap-area {
@@ -464,10 +477,11 @@ h5 {
     font-size: 14px;
     font-weight: 400;
 	color: #F7F3F3;
+	text-align:justify;
 }
 
 .banner3 {
-  background-image: url(../imagenes/banner5.jpg);
+  background-image: url( .'<?php echo get_bloginfo('template_directory');?>'. /img/banner5.jpg);
   background-repeat: repeat-x;
   background-position:center center;
   background-size: cover;
@@ -581,9 +595,13 @@ h5 {
 }
 
 .btn-mc{color:#fff;background-color:#003278;border-color:#194685}
+
 .btn-mc.active,.btn-mc.focus,.btn-mc:active,.btn-mc:focus,.btn-mc:hover,.open>.dropdown-toggle.btn-mc{color:#fff;background-color:#325a93;border-color:#4c6fa0}
+
 .btn-mc.active,.btn-mc:active,.open>.dropdown-toggle.btn-mc{background-image:none}
+
 .btn-mc.disabled,.btn-mc.disabled.active,.btn-mc.disabled.focus,.btn-mc.disabled:active,.btn-mc.disabled:focus,.btn-mc.disabled:hover,.btn-mc[disabled],.btn-mc[disabled].active,.btn-mc[disabled].focus,.btn-mc[disabled]:active,.btn-mc[disabled]:focus,.btn-mc[disabled]:hover,fieldset[disabled] .btn-mc,fieldset[disabled] .btn-mc.active,fieldset[disabled] .btn-mc.focus,fieldset[disabled] .btn-mc:active,fieldset[disabled] .btn-mc:focus,fieldset[disabled] .btn-mc:hover{background-color:#325a93;border-color:#4c6fa0}
+
 .btn-mc .badge{color:#325a93;background-color:#fff}
 
 .navbar .navbar-collapse {
@@ -599,6 +617,6 @@ h5 {
 }
 
 .imagencarousel {
-	width:100%;
+	width:100vw;
 	height:100%;
 }
